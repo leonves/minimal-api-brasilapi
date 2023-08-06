@@ -1,8 +1,9 @@
-﻿using System.Text.Json.Serialization;
+﻿using BrasilApiIntegration.Model.Core;
+using System.Text.Json.Serialization;
 
 namespace BrasilApiIntegration.Model.Response
 {
-    public class WeatherResponse
+    public class WeatherResponse : EntityResponse
     {
         [JsonPropertyName("codigo_icao")]
         public string CodigoIcao { get; set; }
